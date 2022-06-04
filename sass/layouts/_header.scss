@@ -1,0 +1,109 @@
+/* Header */
+
+.header {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    background-color: var(--accent-white-color);
+    border-bottom: 1px solid var(--line-color);
+
+    &__container {
+        display: flex;
+    }
+}
+
+/* Логотип */
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    &__list {
+        display: flex;
+    }
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    
+    }
+    
+}
+
+
+.navigation__link {
+    position: relative;
+    display: block;
+    padding: 32px 0;
+
+    color: var(--primary-text-color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+    
+    &.current {
+        color: var(--accent-color);
+    
+    }
+
+    &--header-current::after {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+    
+    
+        content: '';
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    }
+    
+}
+
+
+
+/* Контакты*/
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.auth-nav__link {
+    display: flex;
+    padding: 32px 0;
+    align-items: center;
+
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.auth-nav__icon {
+    fill: currentColor;
+    margin-right: 10px;
+    align-items: center;
+
+}

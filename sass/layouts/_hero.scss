@@ -1,0 +1,36 @@
+/*Герой*/
+
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-color: var(--primary-bgr-color);
+    text-align: center;
+    padding: 200px 0;
+
+
+    &__title {
+        color: var(--accent-white-color);
+        margin: 0 auto 30px;
+        width: 696px;
+
+        @include fonts (900, 44px, 1.36, 00.06em, uppercase);
+    }
+
+}
+
+/* button */
+
+.hero__button {
+    @include hero__button;
+    &:hover,
+    &:focus {
+        background-color: var(--color-button-hover);
+    }
+}

@@ -1,0 +1,14 @@
+body {
+    color: var(--title-text-color);
+    background-color: var(--accent-white-color);
+    font-family: var(--font-family-text);
+    
+    @include fonts(400, 14px, 1.14, 00.03em);
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,41 @@
+:root {
+    /* Шрифты*/
+
+    --font-family-logo: Raleway, sans-serif;
+    --font-family-text: Roboto, sans-serif;
+
+    /* Цвет текста */
+
+    --primary-text-color: #212121;
+    --title-text-color: #757575;
+    --accent-color: #2196F3;
+    --accent-white-color: #FFFFFF;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
+    --logo-text: #000000;
+
+    /* Цвет фона */
+
+    --primary-bgr-color: #2F303A;
+    --secondary-bgr-color: #F5F4FA;
+    --other-bgr-color: #E5E5E5;
+    --bgr-color-projects: #EEEEEE;
+    --color-button-hover: #188CE8;
+    --line-color: #ECECEC;
+
+    /* Карточки */
+    --card-set-gap: 30px;
+
+    /* Border */
+    --border-icon: #AFB1B8;
+    --border-modal: 1px solid rgba(33, 33, 33, 0.2);
+
+    /* Иконки */
+    --fill-icon: #AFB1B8;
+    --fill-hover-color: #FFFFFF;
+    --fill-bgr-hover: #2196F3;
+
+    /* Анимация */
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}

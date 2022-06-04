@@ -1,0 +1,65 @@
+@mixin hero__button {
+    min-width: 200px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    color: var(--accent-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-family: var(--font-family-text);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+
+
+}
+
+@mixin form__button {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
+    margin: auto;
+    cursor: pointer;
+
+    color: var(--accent-white-color);
+    background-color: var(--accent-color);
+
+    font-family: var(--font-family-text);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+
+    
+}
+
+@mixin fonts ( $fw, $fs, $lh, $ls: false, $tt: false) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+   @if $ls {
+    letter-spacing: $ls;
+   }
+    
+    @if $tt {
+        text-transform: $tt;
+        
+    }
+    
+}
