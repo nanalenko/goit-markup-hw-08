@@ -1,11 +1,11 @@
 /* Header */
 
 .header {
-    position: fixed;
+    // position: fixed;
     width: 100vw;
     top: 0;
     left: 0;
-    z-index: 5;
+    // z-index: 5;
 
     background-color: var(--accent-white-color);
     border-bottom: 1px solid var(--line-color);
@@ -29,6 +29,12 @@
     
     }
     
+}
+
+// Mobile-menu
+
+.mobile-button{
+    margin-left: auto;
 }
 
 

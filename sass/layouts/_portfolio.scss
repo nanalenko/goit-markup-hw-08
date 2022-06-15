@@ -73,13 +73,15 @@
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     }
 
-    // @media screen and(min-width:768px) {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
+    @media screen and(min-width:768px) {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
-
+.project-card{
+    flex-grow: 1;
+}
 .project-card__title {
     color: var(--primary-text-color);
     @include fonts (700, 18px, 2, 0.06em);
