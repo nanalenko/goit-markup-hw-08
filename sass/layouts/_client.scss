@@ -1,24 +1,36 @@
 /* Постоянные клиенты */
 
 .client__title {
+    margin-bottom: 30px;
     text-align: center;
     color: var(--primary-text-color);
-   
+
     @include fonts (700, 36px, 1.17);
 
-    margin-bottom: 50px;
+    @media screen and(min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+
 }
 
 .client__list {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: -15px;
 }
 
+.client__item {
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
 
-.client__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and(max-width:767px) {
+        flex-basis: calc(100% / 2 - 30px);
+    }
 }
+
 
 .client__link {
     display: flex;
@@ -26,9 +38,19 @@
 
     border: 1px solid var(--border-icon);
     border-radius: 4px;
-    width: 170px;
+    
+    // width: 210px;
+    width: calc(100%/2 -30px);
     height: 92px;
     cursor: pointer;
+
+    @media screen and(min-width: 768px){
+        width: 226px;
+    }
+
+    @media screen and(min-width: 1200px){
+        width: 170px;
+    }
 
     align-items: center;
     justify-content: center;

@@ -23,12 +23,23 @@
 }
 
 .modal {
+    padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 90vw;
+    height: auto;
 
-    width: 528px;
-    height: 581px;
+    @media screen and(min-width: 480px) {
+        width: 450px;
+        // max-height: 609px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        width: 528px;
+        // height: 581px;
+    }
+
 
     background-color: var(--accent-white-color);
     border-radius: 4px;
@@ -36,7 +47,7 @@
 
     transform: translate(-50%, -50%) scale(1.0);
     transition: transform var(--transition-duration) var(--transition-timing-function),
-        opacity var(--transition-duration) var(--transition-timing-function);
+    opacity var(--transition-duration) var(--transition-timing-function);
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.5);
@@ -78,7 +89,7 @@
 
 .modal-form {
 
-    padding: 40px;
+    // padding: 40px;
 
     &__title {
         display: flex;
@@ -109,7 +120,7 @@
     &__label {
         display: block;
         text-align: left;
-    
+
         @include fonts (400, 12px, 1.17, 0.01em);
         margin-bottom: 5px;
     }
@@ -117,6 +128,7 @@
     &__container {
         position: relative;
         display: block;
+        // width: 100%;
 
     }
 
@@ -191,11 +203,19 @@
 .checkbox {
     position: relative;
     display: flex;
+
+    font-size: 12px;
+    line-height: 1.17;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-
+    margin-top: 10px;
     margin-bottom: 30px;
+
+    @media screen and(min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 
     &__input {
         position: absolute;
@@ -204,7 +224,8 @@
 
 
 .checkbox__icon {
-    display: inline-block;
+    // display: inline-block;
+    // display: flex;
     fill: var(--fill-hover-color);
     margin-right: 8px;
 
@@ -221,18 +242,19 @@
         background-origin: border-box;
     }
 
-    .checkbox__input:hover ~ &,
-    .checkbox__input:focus ~ & {
+    .checkbox__input:hover~&,
+    .checkbox__input:focus~& {
         border-color: var(--fill-bgr-hover);
     }
 }
 
 
 .checkbox__label {
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 1.71;
+    line-height: 1.17;
+    // line-height: 1.71;
     color: var(--title-text-color);
     user-select: none;
 }
@@ -245,7 +267,7 @@
 /* Form__button */
 
 .form__button {
-   @include form__button;
+    @include form__button;
 
     &:hover,
     &:focus {

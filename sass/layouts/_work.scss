@@ -2,26 +2,21 @@
 
 .work {
     padding-top: 0;
-    // display: none;
+    display: none;
 
 
-    // @media screen and (min-width:1200px){
-    // display: block;
-    // }
+    @media screen and (min-width:1200px){
+    display: block;
+    }
    
 
     &__list {
         list-style: none;
         display: flex;
-        // @media screen and (min-width:1200px){
-        //     display: flex;
-        //     }
         
     }
 }
-// .work__container{
-//     display: none;
-// }
+
 
 .work__item {
     position: relative;
@@ -29,10 +24,6 @@
     &:not(:last-child) {
         margin-right: 30px;
 
-    // @media screen and(min-width:1200px){
-    //     display: none;
-        
-    // }    
     }
 }
 

@@ -5,39 +5,102 @@
     background-color: var(--secondary-bgr-color);
 
     &__caption {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+
+        @media screen and(min-width:1200px) {
+            margin-bottom: 50px;
+        }
     }
 
     &__list {
         list-style: none;
+        margin: 0;
+
+        @media screen and(min-width: 768px) and (max-width: 1199px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+        @media screen and(min-width: 1200px) {
+            display: flex;
+        }
     }
 }
 
 
 .team__item {
+    width: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and(max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    // &:not(:last-child) {
+    //     margin-bottom: 30px;
+    // }
+
+    @media screen and (min-width: 768px) {
+        margin: 15px;
+        // width: calc((100% - 4 * 15px) / 2);
+        width: calc(100% /2 - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+        margin: 0;
+        &:not(:last-child) {
+                    margin-right: 30px;
+                }
+    }
+    // @media screen and (min-width: 768px){
+    //     &:not(:last-child) {
+    //         margin-right: 30px;
+    //     }
+    // }
+    }
+   
+
+.team__item--img {
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 374px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 260px;
     }
 }
 
 .team-members {
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 24px;
+    // height: 162px;
     text-align: center;
-    height: 168px;
+    // height: 168px;
     border-radius: 0px 0px 4px 4px;
     background-color: var(--accent-white-color);
+    @media screen and(max-width: 1199px) {
+        height: 162px;
+    }
+    @media screen and(min-width: 1200px) {
+        padding: 30px 0;
+        height: 168px;
+    }
+
+   
 
 
     &__title {
         margin-bottom: 10px;
 
         color: var(--primary-text-color);
-        
+
         @include fonts (500, 16px, 1.19);
     }
 
@@ -55,9 +118,9 @@
         align-items: center;
     }
 
-    &__item:not(:last-child) {
-        margin-right: 10px;
-    }
+    // &__item:not(:last-child) {
+    //     margin-right: 10px;
+    // }
 
 }
 
