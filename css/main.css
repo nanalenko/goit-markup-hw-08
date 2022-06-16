@@ -376,6 +376,10 @@ img {
   color: var(--accent-color);
 }
 
+.mobile-btn {
+  fill: currentColor;
+}
+
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 30px;
 }

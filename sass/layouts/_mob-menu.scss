@@ -131,31 +131,9 @@
             color: var(--accent-color);
         }
 }
-// .open-btn:hover,
-// .open-btn:focus{
-//     color: var(--accent-color);
-// }
-// .menu-button__close {
- 
-
-//     transition: color var(--transition-duration) var(--transition-timing-function);
-
-//     &:hover,
-//     &:focus {
-//         color: var(--accent-color);
-//     }
-// }
-
-// .menu-button__open {
-
-//     transition: color var(--transition-duration) var(--transition-timing-function);
-
-//     &:hover,
-//     &:focus {
-//         color: var(--accent-color);
-//     }
-
-// }
+.mobile-btn{
+    fill: currentColor;
+}
 
 .mobile-menu__item {
     &:not(:last-child) {
