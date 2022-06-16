@@ -170,6 +170,12 @@ img {
   display: flex;
 }
 
+@media screen and (max-width: 767px) {
+  .header__container {
+    display: block;
+  }
+}
+
 /* Логотип */
 .navigation {
   display: -webkit-box;
@@ -342,6 +348,10 @@ img {
           transform: translateX(0);
 }
 
+.menu__btn {
+  margin-left: auto;
+}
+
 .mobile-button__close,
 .mobile-button__open {
   display: -webkit-inline-box;
@@ -356,7 +366,6 @@ img {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  position: absolute;
   top: 10px;
   right: 15px;
   -webkit-transition: color var(--transition-duration) var(--transition-timing-function);
@@ -374,6 +383,10 @@ img {
 .mobile-button__open:hover,
 .mobile-button__open:focus {
   color: var(--accent-color);
+}
+
+.mobile-button__close {
+  position: absolute;
 }
 
 .mobile-btn {
