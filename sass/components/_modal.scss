@@ -7,9 +7,14 @@
     width: 100%;
     height: 100%;
     z-index: 7;
+    overflow-y: scroll;
 
     background-color: rgba(0, 0, 0, 0.2);
     opacity: 1;
+//    @media screen and(max-width: 767px) {
+//     padding: 93px 15px;
+    
+//    }
 
     transition: opacity var(--transition-duration) var(--transition-timing-function),
         visibility var(--transition-duration) var(--transition-timing-function);
@@ -28,7 +33,8 @@
     top: 50%;
     left: 50%;
     width: 90vw;
-    height: auto;
+    // height: auto;
+    
 
     @media screen and(min-width: 480px) {
         width: 450px;

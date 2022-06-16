@@ -1,0 +1,229 @@
+// Mobile-menu
+
+
+// .mobile {
+//     position: fixed;
+//     background: var(--accent-white-color);
+//     width: 100vw;
+//     height: 100vh;
+//     z-index: 10;
+//     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+//         0px 1px 3px rgba(0, 0, 0, 0.16);
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     // transform: translateX(100%);
+//     transition: transform var(--transition-duration) var(--transition-timing-function);
+//     opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+
+//     &.is-hidden {
+//         // transform: translateX(0);
+//         opacity: 1;
+//         visibility: visible;
+//         pointer-events: initial;
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         display: none;
+//     }
+// }
+
+// // .mobile__container{
+
+// //     background-color: var(--accent-white-color);
+
+
+// //  @media screen and(max-width: 767px) {
+// //     display: none;
+// //     // position: absolute;
+// //     
+
+// //     &.is-open{
+// //         display: block;
+// //     }
+// //     }
+
+// // }
+// .menu-button {
+//     display: flex;
+//     margin-left: auto;
+// }
+
+// .mobile-button {
+//     // display: flex;
+//     // display: inline-flex;
+
+//     margin: 0;
+//     padding: 0;
+//     border: none;
+//     background-color: transparent;
+//     // position: absolute;
+
+//     @media screen and(min-width: 768px) {
+//         display: none;
+
+//     }
+
+
+// }
+
+// .mobile-button .menu-mobile__icon-close {
+//     display: none;
+// }
+
+// .mobile-button.is-open .menu-mobile__icon-close {
+//     display: block;
+// }
+
+// .mobile-button.is-open .menu-mobile__icon {
+//     display: none;
+// }
+
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 48px 15px 48px 40px;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+.mobile-button__close,
+.mobile-button__open {
+    // display: inline-flex;
+    display: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.menu-button__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.menu-button__open {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.mobile-menu__item {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+.mobile__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+
+    &.current {
+        color: var(--accent-color);
+    }
+}
+
+.menu-contacts__list {
+    margin-top: auto;
+    margin-bottom: 64px;
+}
+
+.menu-contacts__tel--link {
+    display: block;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 32px;
+
+    color: var(--accent-color);
+}
+
+.menu-contacts__site--link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: var(--title-text-color);
+}
+
+.mob-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mob-menu__socials {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
+.mob-menu__link{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  
+    color: var(--accent-color);
+  
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+    }
+    .mob-menu__socials:not(:last-child) &::after {
+        background-color: rgba(33, 33, 33, 0.2);
+      }
+    &::after {
+        content: " ";
+        position: absolute;
+        width: 1px;
+        height: 22px;
+        margin-left: 10px;
+      }
+}
