@@ -178,7 +178,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .navigation__list {
@@ -353,6 +352,13 @@ img {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-button__close,
+  .mobile-button__open {
+    display: none;
+  }
 }
 
 .menu-button__close {
