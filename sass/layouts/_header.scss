@@ -25,6 +25,7 @@
 .navigation {
     display: flex;
     align-items: center;
+    position: relative;
 
     &__list {
         display: none;

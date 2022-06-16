@@ -178,6 +178,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .navigation__list {
@@ -344,7 +345,9 @@ img {
 
 .mobile-button__close,
 .mobile-button__open {
-  display: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
