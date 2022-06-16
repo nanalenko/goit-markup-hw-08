@@ -111,6 +111,7 @@
 .mobile-button__open {
     display: inline-flex;
     justify-content: flex-end;
+    max-width: 480px;
     margin: 0;
     padding: 0;
     border: none;
@@ -130,11 +131,12 @@
             color: var(--accent-color);
         }
 }
-
+// .open-btn:hover,
+// .open-btn:focus{
+//     color: var(--accent-color);
+// }
 // .menu-button__close {
-//     position: absolute;
-//     top: 10px;
-//     right: 15px;
+ 
 
 //     transition: color var(--transition-duration) var(--transition-timing-function);
 
@@ -145,9 +147,6 @@
 // }
 
 // .menu-button__open {
-//     position: absolute;
-//     top: 10px;
-//     right: 15px;
 
 //     transition: color var(--transition-duration) var(--transition-timing-function);
 
@@ -156,9 +155,6 @@
 //         color: var(--accent-color);
 //     }
 
-//     @media screen and (min-width: 768px) {
-//         display: none;
-//     }
 // }
 
 .mobile-menu__item {
