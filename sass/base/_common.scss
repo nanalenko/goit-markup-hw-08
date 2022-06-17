@@ -3,7 +3,7 @@ body {
     background-color: var(--accent-white-color);
     font-family: var(--font-family-text);
     
-    @include fonts(400, 14px, 1.14, 00.03em);
+    @include fonts(400, 14px, 1.14, 0.03em);
 
 }
 
